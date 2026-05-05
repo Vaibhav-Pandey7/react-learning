@@ -12,6 +12,12 @@ const React={
     }
 }
 
+const ReactDOM={
+    render: function(element,root){
+        root.append(element);
+    }
+}
+
 // const header1=document.createElement('h1');
 // header1.textContent="Hello Vaibhav";
 
@@ -28,7 +34,10 @@ const React={
 // header2.style.color="white";
 
 const header1=React.createElement('h1',{"backgroundColor":"black","color":"white"},"Hello Vaibhav");
+const header2=React.createElement('h1',{"backgroundColor":"pink","color":"red"},"Hello Vaibhav");
 
 const div=document.getElementById('root');
-div.append(header1);
+ReactDOM.render(header1,div);
+ReactDOM.render(header2,div);
+// div.append(header1);
 // div.append(header2);
