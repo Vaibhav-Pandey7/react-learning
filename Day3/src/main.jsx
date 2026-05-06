@@ -1,6 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-createRoot(document.getElementById('root')).render(
-  
-)
+const div=document.getElementById('root');
+const child=(
+  <div>
+    <h1 id="first" style={{backgroundColor:"pink",color:"red"}}>I am Vaibhav Pandey</h1>
+    <h1 id="second" style={{backgroundColor:"pink",color:"red"}}>I am practicing React</h1>
+  </div>
+);
+
+ReactDOM.createRoot(div).render(child);
