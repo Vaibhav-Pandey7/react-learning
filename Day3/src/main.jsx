@@ -20,11 +20,25 @@ const child=(
 //React Component
 //->function based component
 
-function greet(){
+
+function Wrapper(Function1,Function2){
+  return (
+    <>
+      <Function1></Function1>
+      <Function2></Function2>
+    </>
+  );
+}
+
+function Greet(){
   return <h1>how are u</h1>
 }
 
-const functioncomponent=greet();
+const Meet=()=>{
+  return <h1>Whats up man??</h1>
+}
+
+// const functioncomponent=Greet();
 
 // ReactDOM.createRoot(div).render(child);
-ReactDOM.createRoot(div).render(functioncomponent);
+ReactDOM.createRoot(div).render(Wrapper(Greet,Meet));
