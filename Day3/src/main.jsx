@@ -41,4 +41,5 @@ const Meet=()=>{
 // const functioncomponent=Greet();
 
 // ReactDOM.createRoot(div).render(child);
-ReactDOM.createRoot(div).render(Wrapper(Greet,Meet));
+// ReactDOM.createRoot(div).render(Wrapper(Greet,Meet));
+ReactDOM.createRoot(div).render(<> <Greet></Greet> <Meet></Meet></>); 

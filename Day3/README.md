@@ -11,3 +11,5 @@ Transpiler: Translates source code from one high-level language to another high-
 A normal JavaScript function starts with a lowercase letter: function welcome()
 
 A React Component MUST start with a capital letter: function Welcome()
+
+while making react component using jsx we make the function first letter capital that is coz when we call a function like<Welcome/> if we would have donw like<welcome/> jsx would get confused whether its a html tag or react component
