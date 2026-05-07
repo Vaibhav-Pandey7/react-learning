@@ -5,7 +5,7 @@ esbuild: I don't care, I'm just translating this JSX into normal JS so the brows
 React.createElement=>react element(JS object);
 ![alt text](image.png)
 
-Compiler: Translates source code from a high-level language to a low-level
+Compiler: Translates source code from a high-level language to a low-level  
 Transpiler: Translates source code from one high-level language to another high-level language(Babel)
 
 A normal JavaScript function starts with a lowercase letter: function welcome()
