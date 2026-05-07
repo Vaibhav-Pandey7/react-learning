@@ -13,8 +13,18 @@ const obj={
 const child=(
   <>
     <h1 id="first" className="two" style={{backgroundColor:"pink",color:"red"}}>I am {name}</h1>
-    <h1 id="second" style={{backgroundColor:"pink",color:"red"}}>I am practicing React {obj.age}</h1>
+    <h1 id="second" money={23} style={{backgroundColor:"pink",color:"red"}}>I am practicing React {obj.age}</h1>
   </>
 );
 
-ReactDOM.createRoot(div).render(child);
+//React Component
+//->function based component
+
+function greet(){
+  return <h1>how are u</h1>
+}
+
+const functioncomponent=greet();
+
+// ReactDOM.createRoot(div).render(child);
+ReactDOM.createRoot(div).render(functioncomponent);
