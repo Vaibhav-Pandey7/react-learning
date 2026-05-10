@@ -9,3 +9,5 @@ we have to do it like
   
 also in one file there can be only 1 deault export  
 and if we want others we do named export  
+if we have to change the name of an import we can do it like  
+```import Header as head from "./xyz";```  
