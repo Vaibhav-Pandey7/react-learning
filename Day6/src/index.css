@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.first{
+  
+}
+
+h1{
+  color: white;
+  font-size: 200px;
+}
+
+button{
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  background-color: pink;
+  border-radius: 7%;
+  box-shadow: 0px 5px 5px palevioletred;
+}
+
+button:hover{
+  scale: 1.2;
+}
+#root{
+  background-color: black;
+}
