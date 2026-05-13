@@ -5,6 +5,7 @@ import {createRoot}from "react-dom/client";
 function Buttons(){
     const [colour,setcolour]=useState('white');
 
+    console.log('render');
     function colourChanger(e){
         let val=e.target.value;
         if(val==='default'){
