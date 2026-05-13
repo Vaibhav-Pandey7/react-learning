@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import {createRoot}from "react-dom/client";
 
 
 function Buttons(){
     const [colour,setcolour]=useState('white');
 
-    console.log('render');
     function colourChanger(e){
         let val=e.target.value;
         if(val==='default'){
@@ -15,6 +14,11 @@ function Buttons(){
         }
     }
     
+    // useEffect(Callback,[dependency]);
+    // useEffect(() => {
+    //     document.body.style.backgroundColor = colour;
+    // }, [colour]);
+
     const arr=['pink','green','red','orange'];
     return(
         <div className="parent" style={{backgroundColor:colour}}>

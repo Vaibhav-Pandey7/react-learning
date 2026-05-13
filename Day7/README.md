@@ -15,3 +15,6 @@ Using Buttons() is just a raw JavaScript call that skips the registration proces
 here react render primitive datatypes twice but if we click again it stops from re-rendering
   
 but in case of non-primitive datatypes it calls only one and this happens coz objects are passed by reference 
+  
+# useEffect is executed at the last
+  
