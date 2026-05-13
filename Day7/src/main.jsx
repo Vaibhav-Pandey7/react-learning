@@ -19,7 +19,7 @@ function Buttons(){
         <div className="parent" style={{backgroundColor:colour}}>
             {
                 arr.map((colour,index)=>(
-                    <button key={index} className="but" value={colour} onClick={colourChanger}>{colour}</button>
+                    <button style={{backgroundColor:colour}} key={index} className="but" value={colour} onClick={colourChanger}>{colour}</button>
                 ))
             }
             <button className="but" value="default" onClick={colourChanger}>reset</button>
