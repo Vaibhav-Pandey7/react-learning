@@ -18,6 +18,7 @@ but in case of non-primitive datatypes it calls only one and this happens coz ob
   
 # useEffect is executed at the last  
 
+
 # When to use it
 ## To synchronize your React component with an External System.
 ## What is an "External System"? Anything that React doesn't directly control:
