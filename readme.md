@@ -11,3 +11,5 @@
 # useCallback is for Functions (The Logic): Use it to freeze a function's memory address in the parent component, specifically so you can pass it down as a prop without accidentally breaking the child's React.memo shield.
 
 # Never use React.memo or useCallback until the parent is getting called too many times as using these increase the overhead due to the code they bring that helps us to use them 
+  
+# props is an object 
