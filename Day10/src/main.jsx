@@ -62,7 +62,7 @@ function Fibonacci() {
         flexDirection: "column",
       }}
     >
-      <h1>Fibonacci Number:-{display}</h1>
+      <h1>Fibonacci Number: {display}</h1>
       <input
         style={{ width: "auto", height: "40px" }}
         type="number"
