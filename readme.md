@@ -13,3 +13,7 @@
 # Never use React.memo or useCallback until the parent is getting called too many times as using these increase the overhead due to the code they bring that helps us to use them 
   
 # props is an object 
+
+# always create diff components for different tasks
+
+# we can use useEffect instead of usememo but that would increase the reneders as with useEffect we have to use a state variable to update in dom

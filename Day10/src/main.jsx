@@ -27,12 +27,18 @@ function Counter() {
 function Fibonacci() {
   const [val, setval] = useState("");
   const [display, setdisplay] = useState("");
-
+  
   const fib = useCallback((v) => {
     if (v > 1500) {
       alert("Bro, the number is too big!");
       return;
     }
+
+    if (v === "") {
+      alert("Enter a number!");
+      return;
+    }
+
     let prev = 0,
       curr = 1,
       temp = 0;
