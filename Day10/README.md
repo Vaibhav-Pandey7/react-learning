@@ -2,3 +2,5 @@
 # The Golden Rule of useCallback
   
 >If your function uses a `state` variable inside its `body`, that variable `MUST` `go` into the `dependency array`. If it's in the array, React will automatically give you a fresh, new copy of the function exactly when you need it.
+
+# Always handle edge case if user enter large number as we are using for loop and js is single threaded
