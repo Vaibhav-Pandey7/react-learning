@@ -17,3 +17,5 @@
 # always create diff components for different tasks
 
 # we can use useEffect instead of usememo but that would increase the reneders as with useEffect we have to use a state variable to update in dom
+
+# useMemo to save results useCallback to save functions and useRef to save variables that are not displayed
