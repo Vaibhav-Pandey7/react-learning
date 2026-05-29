@@ -1,0 +1,25 @@
+h1{
+  cursor: pointer;
+  color: white;
+
+}
+
+button {
+  cursor: pointer;
+  color: red;
+  height: 30px;
+  /* width: auto; */
+  background-color: blue;
+}
+
+body{
+  background-color: black;
+  height: 100vh;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
