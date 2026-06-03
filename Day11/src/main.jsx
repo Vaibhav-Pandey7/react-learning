@@ -1,9 +1,12 @@
 import { createRoot } from "react-dom/client";
-import { useState } from "react";
+import { useState,useContext } from "react";
 import Increment from "./components/Increment";
 import Decrement from "./components/Decrement";
+import GlobalContext from "./GlobalContext";
+
 
 function App() {
+  const data=useContext(GlobalContext);
   const [counter, setcounter] = useState(0);
   return (
     <div
@@ -20,6 +23,7 @@ function App() {
         >
           Parent Counter is: {counter}
         </h1>
+        <h2 style={{color:"white"}}>{data}</h2>
       </div>
       <div>
         <Increment count={counter} func={setcounter} />
