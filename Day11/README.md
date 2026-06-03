@@ -25,3 +25,6 @@ if we use state uplifting if we have multiple children but only the lowest one u
 >If we just export and update a variable from a normal JavaScript file, the value changes in memory, but the screen will not update because React doesn't track standard variables. This puts us right back where we started before learning `useState`. 
 
 >To fix this, we use `useContext`. It acts as a global trigger that connects our data directly to React's engine. It tells React: "Provide this state to any child wrapped inside the `<GlobalContext.Provider>`, and whenever this value changes, automatically re-render those specific children so the screen updates."
+
+## Inside GlobalContext  
+![alt text](./images/image3.png)
