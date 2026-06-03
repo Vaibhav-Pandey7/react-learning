@@ -15,3 +15,6 @@ if we use state uplifting if we have multiple children but only the lowest one u
 >❌ Bad: const globalContext = createContext();
 
 >✅ Good: const GlobalContext = createContext();
+
+  
+## to be able to get the updated value we have to wrap in the GlobalContext.Provider

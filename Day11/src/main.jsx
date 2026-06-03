@@ -9,29 +9,32 @@ function App() {
   const data=useContext(GlobalContext);
   const [counter, setcounter] = useState(0);
   return (
-    <div
-      style={{
-        textAlign: "center",
-        gap: "10px",
-      }}
-    >
-      <div>
-        <h1
-          onClick={() => {
-            setcounter(counter + 1);
+      <GlobalContext.Provider value={{count:counter,setcount:setcounter}}>
+        {/* <GlobalContext.Provider value={{counter,setcounter}}/> this and the above one are same*/} 
+        <div
+          style={{
+            textAlign: "center",
+            gap: "10px",
           }}
         >
-          Parent Counter is: {counter}
-        </h1>
-        <h2 style={{color:"white"}}>{data}</h2>
-      </div>
-      <div>
-        <Increment count={counter} func={setcounter} />
-      </div>
-      <div>
-        <Decrement count={counter} func={setcounter} />
-      </div>
-    </div>
+          <div>
+            <h1
+              onClick={() => {
+                setcounter(counter + 1);
+              }}
+            >
+              Parent Counter is: {counter}
+            </h1>
+            <h2 style={{color:"white"}}>{data}</h2>
+          </div>
+          <div>
+            <Increment/>
+          </div>
+          <div>
+            <Decrement/>
+          </div>
+        </div>
+      </GlobalContext.Provider>
   );
 }
 
