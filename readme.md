@@ -19,3 +19,7 @@
 # we can use useEffect instead of usememo but that would increase the reneders as with useEffect we have to use a state variable to update in dom
 
 # useMemo to save results useCallback to save functions and useRef to save variables that are not displayed
+  
+# src/assets/ is exclusively for images, fonts, and icons that are going to be bundled by Vite and actually displayed inside your React app (like a company logo on your navbar).
+
+>README images are only for GitHub. If you put them in src, Vite will try to process them when you build the app, wasting build time and potentially bloating your final production code with screenshots that the actual app users will never see.
