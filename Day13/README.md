@@ -27,3 +27,5 @@ Custom Hooks are specialized JavaScript functions that allow us to extract compo
 * **Separation of Concerns:** Decoupling complex state management and side effects (like API fetching) from the visual UI components. 
 * **Reusability & Scaling:** Creating standalone logic blocks (e.g., `useFetch`, `useTheme`) that can be imported across the entire Single Page Application, completely eliminating code duplication.
 * **Cleaner Components:** Keeping standard components "dumb" and focused purely on rendering UI elements based on the data provided by the custom hook.
+
+## A Custom Hook is not a separate, independent engine running on its own. When your component calls a custom hook, React grabs the useState and useEffect from that file and injects them straight into your component's memory space. It is exactly as if you wrote the code directly inside the component yourself.
