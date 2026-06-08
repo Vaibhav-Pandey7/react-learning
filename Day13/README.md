@@ -17,3 +17,13 @@
     4.  **Sync Render 2:** React repaints the exact component with the live API data.
 
 ### link used-https://api.github.com/users?since=6000per_page=20
+
+### 🎣 Custom Hooks & Architecture (Separation of Concerns)
+
+Custom Hooks are specialized JavaScript functions that allow us to extract component logic into reusable, modular files. 
+
+#### 🧠 Core Concepts Mastered
+* **The `use` Prefix:** Utilizing React's naming convention to allow standard functions to consume core hooks like `useState`, `useEffect`, and `useContext` without violating the Rules of Hooks.
+* **Separation of Concerns:** Decoupling complex state management and side effects (like API fetching) from the visual UI components. 
+* **Reusability & Scaling:** Creating standalone logic blocks (e.g., `useFetch`, `useTheme`) that can be imported across the entire Single Page Application, completely eliminating code duplication.
+* **Cleaner Components:** Keeping standard components "dumb" and focused purely on rendering UI elements based on the data provided by the custom hook.
