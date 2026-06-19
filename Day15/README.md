@@ -38,5 +38,6 @@ Increment:()=>{return {...state,count=state.count+1}};
 #### Modern Code  with Immer
 `
 Increment:(state)=>{state.count=state.count+1}
-`  
+`   
+>here payload is basically argument
   
