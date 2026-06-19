@@ -5,6 +5,7 @@ export default function Counting(){
 
     const count=useSelector((state)=>state.slice1.count)//here State is a global object that has info about all the slices created in the store
     const [amount,setAmount]=useState(0);
+    const [buttontext,setbuttontext]=useState("Submit");
     const dispatch=useDispatch();
     let val=0;
     return (
@@ -17,14 +18,19 @@ export default function Counting(){
             <form onSubmit={(e) => {
                 e.preventDefault();
                 dispatch(Increment(Number(amount))); 
-                setAmount(0);
+                setTimeout(()=>{
+                    setbuttontext("Submit");
+                    setAmount(0);
+                },500);
             }}>
                 <input 
                     type="number" 
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)} 
-                />
-                <button type="submit">Submit</button>
+                    />
+                <button type="submit" onClick={()=>{
+                    setbuttontext("Subnitted");
+                }}>{buttontext}</button>
             </form>
         </>
     );
