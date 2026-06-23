@@ -10,7 +10,7 @@ export default function CoinCreate(){
   console.log("Current Redux State: ", {data, loading, errormsg});
 
   useEffect(()=>{
-    dispatch(fecthdata(20));
+    dispatch(fecthdata(20));//fetchdata here is a function not a action creator
   },[])
 
   if(loading){
