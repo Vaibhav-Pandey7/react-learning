@@ -21,4 +21,5 @@
 3. The Vault (extraReducers)
 >What it does: It is the secure listener inside your slice that updates your actual state.
 >
->The Magic (Why no placeholders?): It requires an exact password match to let data in. You cannot use a random placeholder name because it >doesn't hold the password. You must use fecthdata.pending because it contains the exact secret string (e.g., "Coin/fetch/pending") needed to >unlock the state.
+>The Magic (Why no placeholders?): It requires an exact password match to let data in. You cannot use a random placeholder name because it >doesn't hold the password. You must use fecthdata.pending because it contains the exact secret string (e.g., "Coin/fetch/pending") needed to >unlock the state.  
+>extraReducers hears every action while normal one's hears only that with there specific slice name is there
