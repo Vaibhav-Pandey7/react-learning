@@ -10,4 +10,18 @@
 
 >Examples: Changing `color`, `background-color`, `box-shadow`, or `opacity`.
 
->Why it's safer: To use the house analogy, this is just painting a wall. You don't have to recalculate the roof structure to paint a wall green. The browser just isolates that specific set of pixels and redraws them. It is very fast and cheap.
+>Why it's safer: To use the house analogy, this is just painting a wall. You don't have to recalculate the roof structure to paint a wall green. The browser just isolates that specific set of pixels and redraws them. It is very fast and cheap.  
+# React simplifies this by using the virtual dom this can also be done in plain js using **DocumnentFragment**  
+## The Virtual DOM is not a real screen layout. It is just a plain, lightweight JavaScript object.  
+# The "Reconciliation" Pipeline (***The Diffing Algorithm***)
+>When you call a state updater like setCount(count + 1), here is the exact millisecond-by-millisecond pipeline of what React does:
+
+>The Snapshots: React currently has a snapshot of your UI in memory (The Old Virtual DOM).
+
+>The Re-render: The state changes. React instantly runs your component function again and builds a completely New Virtual DOM tree from scratch in its memory.
+
+>The Diffing (The Magic): React places the Old Virtual DOM and the New Virtual DOM side-by-side. It runs a lightning-fast mathematical algorithm (called **"Diffing"**) to compare them node by node.
+
+>The Patch: React realizes, "Ah, the only thing that actually changed between these two massive objects is this one single <h1> text value."
+
+>The Real DOM Update: React reaches into the physical browser window and updates only that specific <h1>. Everything else is left completely untouched.
